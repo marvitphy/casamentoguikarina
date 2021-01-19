@@ -12,7 +12,7 @@ app.set('view engine', 'ejs')
 
 // Configura credenciais
 mercadopago.configure({
-    access_token: 'APP_USR-2403643030781235-011820-4bce7bf54617a032c3f98ec07d4c7a3e-412855985'
+    access_token: 'TEST-2403643030781235-011820-a0f533b2bc57528a1363a9a9790797a1-412855985'
 
 });
 
