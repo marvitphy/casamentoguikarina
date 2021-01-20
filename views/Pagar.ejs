@@ -31,6 +31,10 @@
 
             })
 
+            if ($('.oops__message')) {
+                window.location.reload()
+            }
+
             caches.delete(cacheName).then(function(boolean) {
                 // your cache is now deleted
             });
