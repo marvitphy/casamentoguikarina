@@ -1,10 +1,10 @@
 const knex = require('knex')({
     client: 'mysql',
     connection: {
-        host: 'mysql742.umbler.com:41890' || 'localhost',
-        user: 'casaguika' || 'root',
-        password: 'markim123' || '',
-        database: 'casaguika'
+        host: process.env.DB_HOST || 'localhost',
+        user: process.env.DB_USER || 'root',
+        password: process.env.DB_PASS || '',
+        database: 'casamento'
     },
     pool: { min: 0, max: 10 },
 });
