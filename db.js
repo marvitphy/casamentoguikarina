@@ -4,7 +4,7 @@ const knex = require('knex')({
         host: process.env.DB_HOST || 'localhost',
         user: process.env.DB_USER || 'root',
         password: process.env.DB_PASS || '',
-        database: 'casamento'
+        database: 'casaguika'
     },
     pool: { min: 0, max: 10 },
 });
