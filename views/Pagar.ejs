@@ -31,8 +31,8 @@
 
             })
 
-            if ($('.oops__message')) {
-                window.location.reload()
+            if ($('.oops__message').text() == '') {
+
             }
 
             caches.delete(cacheName).then(function(boolean) {
