@@ -38,7 +38,6 @@ app.post('/api/add', async(req, res, next) => {
     let subTotal = Number(dados[0].valor) - Number(valor)
     console.log(subTotal)
     let total = pagamento.total(subTotal)
-    res.redirect('http://google.com')
         // res.json(result)
 })
 
@@ -82,7 +81,7 @@ app.get('/pagar', function(req, res) {
                 quantity: 1,
             }],
             "back_urls": {
-                "success": "http://localhost:3000/finalizar?valor=" + Number(req.query.valor),
+                "success": "/finalizar?valor=" + Number(req.query.valor),
                 "failure": "http://www.seu-site/failure",
                 "pending": "http://www.seu-site/pending"
             },
