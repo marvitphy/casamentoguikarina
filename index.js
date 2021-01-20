@@ -81,7 +81,7 @@ app.get('/pagar', function(req, res) {
                 quantity: 1,
             }],
             "back_urls": {
-                "success": "/finalizar?valor=" + Number(req.query.valor),
+                "success": "http://casamentokarinaeguilherme-com.umbler.net/finalizar?valor=" + Number(req.query.valor),
                 "failure": "http://www.seu-site/failure",
                 "pending": "http://www.seu-site/pending"
             },
