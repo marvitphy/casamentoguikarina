@@ -31,7 +31,7 @@ app.use(function(req, res, next) {
 
 
 app.post('/api/add', async(req, res, next) => {
-    let valor = req.query.valor
+    let valor = req.body.valor
     if (valor.includes('.') != false) {
         valor = valor.replace('.', '')
     }
