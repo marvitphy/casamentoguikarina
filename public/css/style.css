@@ -322,15 +322,12 @@ figure {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
     -webkit-transition: 0.5s;
     -o-transition: 0.5s;
     transition: 0.5s;
 }
 
-.fh5co-video:hover .overlay {
-    background: rgba(0, 0, 0, 0.7);
-}
+.fh5co-video:hover .overlay {}
 
 .fh5co-video:hover a {
     position: relative;
@@ -356,7 +353,6 @@ figure {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
 }
 
 .fh5co-cover>.fh5co-container {

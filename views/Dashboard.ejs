@@ -64,7 +64,6 @@
         }
         
         .musga {
-            opacity: 40%;
             transition: 1.5s;
             height: 33px;
             border-radius: 10px;
@@ -156,10 +155,48 @@
             width: 220px;
         }
         
+        #myVideo {
+            position: fixed;
+            z-index: -1;
+            right: 0;
+            bottom: 0;
+            transform: translateY(100px);
+            min-width: 100%;
+            min-height: 100%;
+            filter: brightness(50%);
+        }
+        
+        .bussola {
+            width: 180px;
+            margin-bottom: 20px;
+        }
+        
+        #ancora {
+            font-size: 30px;
+        }
+        
         @media only screen and (max-width: 600px) {
             .sos {
-                width: 200px;
+                width: 150px;
                 margin-top: 30px;
+            }
+            .bussola {
+                width: 100px;
+                transform: translateY(-25px);
+            }
+            #myVideo {
+                position: fixed;
+                z-index: -1;
+                right: 0;
+                bottom: 0;
+                transform: translateY(-100px);
+                min-width: 100%;
+                min-height: 100%;
+                filter: brightness(50%);
+                transform: translateX(120px);
+            }
+            #ancora {
+                font-size: 22px;
             }
         }
     </style>
@@ -193,8 +230,11 @@
 
             </div>
         </nav>
-
-        <header id="fh5co-header" class="fh5co-cover" role="banner" style="background-image:url(images/img-topo.jpeg);" data-stellar-background-ratio="0.5">
+        <video autoplay muted loop id="myVideo">
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        <header id="fh5co-header" class="fh5co-cover" role="banner" style="" data-stellar-background-ratio="0.5">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
@@ -215,11 +255,8 @@
                                 <a href="/sos">
                                     <p> <img src="images/sos.png" class="sos" alt=""> </p>
                                 </a><br>
-                                <img src="images/c.png" width="180px" alt=""> <br>
-                                <audio class="musga" controls autoplay loop>
-                                    <source src="vida.mp3" type="audio/mp3" >
-                                  Your browser does not support the audio element.
-                                  </audio>
+                                <img src="images/c.png" class="bussola" alt=""> <br>
+
                             </div>
                         </div>
                     </div>
@@ -227,12 +264,16 @@
             </div>
         </header>
 
-        <div id="fh5co-couple" style="">
+        <div id="fh5co-couple" style="background: white;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
                         <h2>Um pouco sobre a gente</h2>
                         <p>Te convidamos para essa data incrível e marcante na nossa história</p>
+                        <audio class="musga" controls autoplay loop>
+                            <source src="vida.mp3" type="audio/mp3" >
+                          Your browser does not support the audio element.
+                          </audio>
                     </div>
                 </div>
                 <div class="couple-wrap animate-box">
@@ -270,41 +311,23 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="display-t">
-                        <div class="display-tc">
-                            <div class="col-md-10 col-md-offset-1">
+                    <div class="display-t ">
+                        <div class="display-tc " style="margin-left: 15%">
+                            <div class="col col-md-offset-1">
                                 <div class="col-md-6 col-sm-6 text-center">
                                     <div class="event-wrap animate-box">
                                         <h3>Cerimônia Principal</h3>
                                         <div class="event-col">
                                             <i class="icon-clock"></i>
                                             <span>16:00 Hrs</span>
-                                            <span>18:00 Hrs</span>
                                         </div>
                                         <div class="event-col">
                                             <i class="icon-calendar"></i>
-                                            <span>Domingo XX</span>
-                                            <span>Novembro, 2020</span>
+                                            <span>01/05/2021</span>
                                         </div>
-                                        <p>O amor só é lindo quando encontramos alguém que nos transforme no melhor que podemos ser</p>
                                     </div>
                                 </div>
-                                <div class="col-md-6 col-sm-6 text-center">
-                                    <div class="event-wrap animate-box">
-                                        <h3>Festa do Casamento</h3>
-                                        <div class="event-col">
-                                            <i class="icon-clock"></i>
-                                            <span>20:00 Hrs</span>
-                                            <span>03:00 Hrs</span>
-                                        </div>
-                                        <div class="event-col">
-                                            <i class="icon-calendar"></i>
-                                            <span>Domingo XX</span>
-                                            <span>Novembro, 2020</span>
-                                        </div>
-                                        <p>Aqui iremos nos divertir e celebrar este momento incrível.</p>
-                                    </div>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -335,7 +358,7 @@
             </li>
         </ul> -->
 
-        <div id="fh5co-gallery" class="fh5co-section-gray">
+        <div id="fh5co-gallery" class="fh5co-section-gray" style="background: white;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
@@ -447,7 +470,7 @@
 
 
 
-        <footer id="fh5co-footer" role="contentinfo">
+        <footer id="fh5co-footer" role="contentinfo" style="background: white;">
             <div class="container">
 
                 <div class="row copyright">
