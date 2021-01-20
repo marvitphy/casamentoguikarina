@@ -56,9 +56,16 @@ License URI: http://www.themevault.net/license/-->
         font-family: cursive;
     }
     
+    .need {
+        font-size: 30px;
+    }
+    
     @media (max-width: 600px) {
         .opa {
             width: 30%;
+        }
+        .need {
+            font-size: 5vw;
         }
     }
 }
@@ -68,14 +75,14 @@ License URI: http://www.themevault.net/license/-->
     <div class="section-page-wrap ">
 
         <header class="top-nav-bar">
-            <a href=""><i style=" font-size: 50px; color: white;" class="fas fa-arrow-left"></i></a>
+            <a href="/"><i style=" font-size: 20px; color: white;" class="fas fa-arrow-left"></i></a>
 
         </header>
         <div class="banner-full-image">
             <div class="banner-title">
                 <h1 class="omulher"> SOS LUA DE MEL</h1>
                 <img class="opa" width="15%" src="c.png" alt="">
-                <h3 class="text-white">Precisamos de <span class="pl-4 pr-4 text-muted bg-white pt-1 pb-1 rounded total">31.000</span></h3>
+                <h3 class="text-white need">Precisamos de <span class="pl-4 pr-4 text-muted bg-white pt-1 pb-1 rounded total">31.000</span></h3>
             </div>
         </div>
         <!-- Feature Property Section Begin -->
@@ -113,9 +120,61 @@ License URI: http://www.themevault.net/license/-->
             </div>
         </div>
 
+        <section style="transform: translateY(-80px)" class="feature-property-section spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 p-0">
+                        <div class="feature-property-left">
+                            <div class="section-title">
+                                <h4>Hotel - Azulik</h4>
+                            </div>
+                            <ul>
+                                <li>Neste hotel lindo que nos hospedaremos</li>
+                                <li>Veja algumas imagens</li>
 
 
-        <section class="feature-property-section spad">
+                            </ul>
+                            <a href="#" data-toggle="modal" data-target="#exampleModal">Comprar Cota</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 p-0">
+                        <div class="fp-slider owl-carousel">
+                            <div class="fp-item set-bg" data-setbg="images/azulik1.jpg">
+                                <div class="fp-text">
+                                    <h5 class="title">Hotel - Azulik</h5>
+                                    <p><span class="icon_pin_alt"></span> Zona Hoteleira</p>
+
+                                    <h5>R$ 8.882,00</h5>
+                                    <ul>
+                                        <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                        <li><i class="fa fa-bathtub"></i> 03</li>
+                                        <li><i class="fa fa-bed"></i> 05</li>
+                                        <li><i class="fa fa-automobile"></i> 01</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="fp-item set-bg" data-setbg="images/azulik2.jpg">
+                                <div class="fp-text">
+                                    <h5 class="title">Viagem para Cancún</h5>
+                                    <p><span class="icon_pin_alt"></span> Zona Hoteleira</p>
+
+                                    <h5>R$ 8.882,00</h5>
+                                    <ul>
+                                        <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                        <li><i class="fa fa-bathtub"></i> 03</li>
+                                        <li><i class="fa fa-bed"></i> 05</li>
+                                        <li><i class="fa fa-automobile"></i> 01</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section style="transform: translateY(-250px)" class="feature-property-section spad">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4 p-0">
@@ -134,7 +193,7 @@ License URI: http://www.themevault.net/license/-->
                     </div>
                     <div class="col-lg-8 p-0">
                         <div class="fp-slider owl-carousel">
-                            <div class="fp-item set-bg" data-setbg="UTI/img/feature-property/fp-1.jpg">
+                            <div class="fp-item set-bg" data-setbg="images/cancun1.jpg">
                                 <div class="fp-text">
                                     <h5 class="title">Viagem para Cancún</h5>
                                     <p><span class="icon_pin_alt"></span> Zona Hoteleira</p>
@@ -148,12 +207,12 @@ License URI: http://www.themevault.net/license/-->
                                     </ul>
                                 </div>
                             </div>
-                            <div class="fp-item set-bg" data-setbg="UTI/img/feature-property/fp-2.jpg">
+                            <div class="fp-item set-bg" data-setbg="images/cancun2.jpg">
                                 <div class="fp-text">
                                     <h5 class="title">Viagem para Cancún</h5>
                                     <p><span class="icon_pin_alt"></span> Zona Hoteleira</p>
 
-                                    <h5>R$ 8.882,00</h5>
+                                    <h5>R$ 7.184,36</h5>
                                     <ul>
                                         <li><i class="fa fa-object-group"></i> 2, 283</li>
                                         <li><i class="fa fa-bathtub"></i> 03</li>
@@ -163,7 +222,9 @@ License URI: http://www.themevault.net/license/-->
                                 </div>
                             </div>
                         </div>
+
                     </div>
+
                 </div>
             </div>
         </section>
@@ -288,9 +349,7 @@ License URI: http://www.themevault.net/license/-->
                 </div>
             </div>
         </footer>
-        <div id="back-to-top" style="display: none">
-            <i class="fa fa-angle-double-up" aria-hidden="true"></i> Topo
-        </div>
+
     </div>
     <!-- Js Plugins -->
     <script src="UTI/js/jquery-3.3.1.min.js"></script>
