@@ -4,16 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Document</title>
+    <style>
+        *,
+        html,
+        body {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
 
 
+    <img src="http://www.rio.rj.gov.br/igstatic/11/46/55/11465516.png" alt="" width="200px"><br><br>
 
     <script src="https://secure.mlstatic.com/sdk/javascript/v1/mercadopago.js"></script>
-    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js" data-preference-id='<%= global.id %>'>
+    <script src="https://www.mercadopago.com.br/integrations/v1/web-payment-checkout.js" data-button-label="Comprar com Mercado Pago" data-preference-id='<%= global.id %>'>
+    </script>
+    </script>
+    <script>
+        $(document).ready(function() {
+
+            $('.mercadopago-button').click(function() {
+
+            })
+
+            caches.delete(cacheName).then(function(boolean) {
+                // your cache is now deleted
+            });
+
+        })
+        window.Mercadopago.setPublishableKey("TEST-271fe729-78f7-4035-9009-566236fe4b4d");
     </script>
 </body>
 

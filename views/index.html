@@ -1,0 +1,380 @@
+<!--Template Name: Snappy
+File Name: index.html
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license/-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.png" />
+    <title>Sos - Lua de Mel</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/custom.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta name="description" content="Aler Template">
+    <meta name="keywords" content="Aler, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SOS - Lua de Mel</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="UTI/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="UTI/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="UTI/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="UTI/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="UTI/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="UTI/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="UTI/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="UTI/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="UTI/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+</head>
+<style>
+@font-face {
+        font-family: chama;
+        src: url('./glyphicons-halflings-regular.ttf');
+    }
+    
+    .omulher {
+        font-family: cursive;
+    }
+    
+    @media (max-width: 600px) {
+        .opa {
+            width: 30%;
+        }
+    }
+}
+</style>
+
+<body id="myPage">
+    <div class="section-page-wrap ">
+
+        <header class="top-nav-bar">
+            <a href=""><i style=" font-size: 50px; color: white;" class="fas fa-arrow-left"></i></a>
+
+        </header>
+        <div class="banner-full-image">
+            <div class="banner-title">
+                <h1 class="omulher"> SOS LUA DE MEL</h1>
+                <img class="opa" width="15%" src="c.png" alt="">
+                <h3 class="text-white">Precisamos de <span class="pl-4 pr-4 text-muted bg-white pt-1 pb-1 rounded total">31.000</span></h3>
+            </div>
+        </div>
+        <!-- Feature Property Section Begin -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Selecionar Cota</h5>
+                        <button type="button" class="close closem" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <span class="valor btn btn-dark text-white rounded">R$ 150,00</span>
+                        <span class="valor btn btn-dark text-white rounded">R$ 250,00</span>
+                        <span class="valor btn btn-dark text-white rounded">R$ 350,00</span>
+                        <span class="valor btn btn-dark text-white rounded">R$ 450,00</span>
+                        <span class="valor btn btn-dark text-white rounded mt-2">R$ 550,00</span>
+                        <span class="valor btn btn-dark text-white rounded mt-2">R$ 650,00</span>
+                        <span class="valor btn btn-dark text-white rounded mt-2">R$ 750,00</span>
+                        <span class="valor btn btn-dark text-white rounded mt-2">R$ 850,00</span>
+                        <span class="valor btn btn-dark text-white rounded mt-2">R$ 950,00</span>
+                        <span class="valor btn btn-dark text-white rounded mt-2">R$ 1.050,00</span>
+                        <span class="valor btn btn-dark text-white rounded mt-2">R$ 1.150,00</span>
+                        <span class="valor btn btn-dark text-white rounded mt-2">R$ 1.250,00</span>
+                        <span class="valor btn btn-dark text-white rounded mt-2">R$ 1.350,00</span>
+                        <span class="valor btn btn-dark text-white rounded mt-2">R$ 1.450,00</span>
+                        <span class="valor btn btn-dark text-white rounded mt-2">R$ 1.550,00</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="finalizar  continuar btn btn-primary">Continuar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Cadastro Rápido</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Nome</label>
+                            <input type="text" class="nome form-control" id="exampleFormControlInput1" placeholder="Cesare Batiste">
+                            <label for="exampleFormControlInput1" class="mt-2  form-label">Celular/Whastapp</label>
+                            <input type="number" class=" form-control contato" id="exampleFormControlInput1" placeholder="(XX) X XXXX-XXXX">
+                            <label for="exampleFormControlInput1" class="mt-2 form-label">Email</label>
+                            <input type="email" class="email form-control" id="exampleFormControlInput1" placeholder="email@email.com">
+                        </div>
+                        <span style="font-weight: bold; font-size: 15px; color: red">OBS: CLICK EM VOLTAR PARA O SITE APÓS FINALIZAR O PAGAMENTO</span>
+                    </div>
+                    <div class="modal-footer">
+
+                        <button type="button" class="btn btn-primary finalizar">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="feature-property-section spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 p-0">
+                        <div class="feature-property-left">
+                            <div class="section-title">
+                                <h4>VIAGEM</h4>
+                            </div>
+                            <ul>
+                                <li>Viagem - Cancún</li>
+                                <li>Nesta viagem realizaremos nosso sonho de conhecer o México. Um lugar incrível com praias de tirar o fôlego.</li>
+
+
+                            </ul>
+                            <a href="#" data-toggle="modal" data-target="#exampleModal">Comprar Cota</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 p-0">
+                        <div class="fp-slider owl-carousel">
+                            <div class="fp-item set-bg" data-setbg="UTI/img/feature-property/fp-1.jpg">
+                                <div class="fp-text">
+                                    <h5 class="title">Viagem para Cancún</h5>
+                                    <p><span class="icon_pin_alt"></span> Zona Hoteleira</p>
+
+                                    <h5>R$ 8.882,00</h5>
+                                    <ul>
+                                        <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                        <li><i class="fa fa-bathtub"></i> 03</li>
+                                        <li><i class="fa fa-bed"></i> 05</li>
+                                        <li><i class="fa fa-automobile"></i> 01</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="fp-item set-bg" data-setbg="UTI/img/feature-property/fp-2.jpg">
+                                <div class="fp-text">
+                                    <h5 class="title">Viagem para Cancún</h5>
+                                    <p><span class="icon_pin_alt"></span> Zona Hoteleira</p>
+
+                                    <h5>R$ 8.882,00</h5>
+                                    <ul>
+                                        <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                        <li><i class="fa fa-bathtub"></i> 03</li>
+                                        <li><i class="fa fa-bed"></i> 05</li>
+                                        <li><i class="fa fa-automobile"></i> 01</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feature Property Section Begin -->
+        <section class="feature-property-section spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 p-0">
+                        <div class="feature-property-left">
+                            <div class="section-title">
+                                <h4>HOTEL</h4>
+                            </div>
+                            <ul>
+                                <li>Apartment</li>
+                                <li>House</li>
+                                <li>Office</li>
+                                <li>Hotel</li>
+                                <li>Villa</li>
+                                <li>Restaurent</li>
+                            </ul>
+                            <a href="#">View all property</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 p-0">
+                        <div class="fp-slider owl-carousel">
+                            <div class="fp-item set-bg" data-setbg="UTI/img/feature-property/fp-1.jpg">
+                                <div class="fp-text">
+                                    <h5 class="title">Home in Merrick Way</h5>
+                                    <p><span class="icon_pin_alt"></span> 3 Middle Winchendon Rd, Rindge, NH 03461</p>
+
+                                    <h5>$ 289.0<span>/month</span></h5>
+                                    <ul>
+                                        <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                        <li><i class="fa fa-bathtub"></i> 03</li>
+                                        <li><i class="fa fa-bed"></i> 05</li>
+                                        <li><i class="fa fa-automobile"></i> 01</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="fp-item set-bg" data-setbg="UTI/img/feature-property/fp-2.jpg">
+                                <div class="fp-text">
+                                    <h5 class="title">Home in Merrick Way</h5>
+                                    <p><span class="icon_pin_alt"></span> 3 Middle Winchendon Rd, Rindge, NH 03461</p>
+
+                                    <h5>$ 289.0<span>/month</span></h5>
+                                    <ul>
+                                        <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                        <li><i class="fa fa-bathtub"></i> 03</li>
+                                        <li><i class="fa fa-bed"></i> 05</li>
+                                        <li><i class="fa fa-automobile"></i> 01</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feature Property Section Begin -->
+        <section class="feature-property-section spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 p-0">
+                        <div class="feature-property-left">
+                            <div class="section-title">
+                                <h4>PASSEIOS</h4>
+                            </div>
+                            <ul>
+                                <li>Apartment</li>
+                                <li>House</li>
+                                <li>Office</li>
+                                <li>Hotel</li>
+                                <li>Villa</li>
+                                <li>Restaurent</li>
+                            </ul>
+                            <a href="#">View all property</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 p-0">
+                        <div class="fp-slider owl-carousel">
+                            <div class="fp-item set-bg" data-setbg="UTI/img/feature-property/fp-1.jpg">
+                                <div class="fp-text">
+                                    <h5 class="title">Home in Merrick Way</h5>
+                                    <p><span class="icon_pin_alt"></span> 3 Middle Winchendon Rd, Rindge, NH 03461</p>
+
+                                    <h5>$ 289.0<span>/month</span></h5>
+                                    <ul>
+                                        <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                        <li><i class="fa fa-bathtub"></i> 03</li>
+                                        <li><i class="fa fa-bed"></i> 05</li>
+                                        <li><i class="fa fa-automobile"></i> 01</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="fp-item set-bg" data-setbg="UTI/img/feature-property/fp-2.jpg">
+                                <div class="fp-text">
+                                    <h5 class="title">Home in Merrick Way</h5>
+                                    <p><span class="icon_pin_alt"></span> 3 Middle Winchendon Rd, Rindge, NH 03461</p>
+
+                                    <h5>$ 289.0<span>/month</span></h5>
+                                    <ul>
+                                        <li><i class="fa fa-object-group"></i> 2, 283</li>
+                                        <li><i class="fa fa-bathtub"></i> 03</li>
+                                        <li><i class="fa fa-bed"></i> 05</li>
+                                        <li><i class="fa fa-automobile"></i> 01</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feature Property Section End -
+
+        -footer--->
+        <footer>
+            <div class="container text-center">
+                <div class="copyright">
+                    <!--Do not remove Backlink from footer of the template. To remove it you can purchase the Backlink-->
+                    &copy; 2021 <a href="https://www.instagram.com/zappata.ofc/?hl=pt-br" target="_blank">Zappata.</a>
+                </div>
+            </div>
+        </footer>
+        <div id="back-to-top" style="display: none">
+            <i class="fa fa-angle-double-up" aria-hidden="true"></i> Topo
+        </div>
+    </div>
+    <!-- Js Plugins -->
+    <script src="UTI/js/jquery-3.3.1.min.js"></script>
+    <script src="UTI/js/bootstrap.min.js"></script>
+    <script src="UTI/js/jquery.magnific-popup.min.js"></script>
+    <script src="UTI/js/mixitup.min.js"></script>
+    <script src="UTI/js/jquery-ui.min.js"></script>
+    <script src="UTI/js/jquery.nice-select.min.js"></script>
+    <script src="UTI/js/jquery.slicknav.js"></script>
+    <script src="UTI/js/owl.carousel.min.js"></script>
+    <script src="UTI/js/jquery.richtext.min.js"></script>
+    <script src="UTI/js/image-uploader.min.js"></script>
+    <script src="UTI/js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            let valor
+
+            $('.continuar').on('click', function() {
+                $('.closem').click()
+            })
+
+            $('.finalizar').click(function() {
+                let email = $('.email').val()
+                let nome = $('.nome').val()
+                let contato = $('.contato').val()
+                window.location.href = 'http://localhost:3000/pagar' + '?valor=' + valor + '&nome=' + nome + '&email=' + email + '&contato=' + contato
+            })
+
+            $('.valor').click(function() {
+                valor = $(this).text()
+                valor = valor.substring(0, valor.length - 3);
+                valor = valor.replace('R$', '')
+                valor = valor.replace(' ', '')
+                valor = valor.replace('.', '')
+                    // window.location.href = 'http://localhost:3000/pagar' + '?valor=' + valor
+                console.log(valor)
+                $('.valor').removeClass('bg-danger')
+                $(this).addClass('bg-danger')
+            })
+
+            axios.get('http://localhost:3000/api/getTotal')
+                .then(function(response) {
+                    // handle success
+                    console.log(response.data.valor);
+                    $('.total').text('R$ ' + ' ' + response.data.valor)
+
+                })
+                .catch(function(error) {
+                    // handle error
+                    console.log(error);
+                })
+                .then(function() {
+                    // always executed
+                });
+
+
+        })
+    </script>
+</body>
+
+</html>
