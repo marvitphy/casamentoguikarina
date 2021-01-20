@@ -331,7 +331,7 @@ License URI: http://www.themevault.net/license/-->
                 $(this).addClass('bg-danger')
             })
 
-            axios.get('http://localhost:3000/api/getTotal')
+            axios.get('/api/getTotal')
                 .then(function(response) {
                     // handle success
                     console.log(response.data.valor);
