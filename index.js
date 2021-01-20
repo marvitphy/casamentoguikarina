@@ -72,18 +72,18 @@ mercadopago.configure({
 
 });
 
-app.get('/pagar', function(req, res) {
-    console.log()
+app.get('/pagar/:valor', function(req, res) {
+    console.log(req.params.valor)
 
 
     mercadopago.preferences.create({
             items: [{
                 title: 'Cota',
-                unit_price: Number(req.query.valor),
+                unit_price: Number(req.params.valor),
                 quantity: 1,
             }],
             "back_urls": {
-                "success": "http://casamentokarinaeguilherme-com.umbler.net/finalizar?valor=" + Number(req.query.valor),
+                "success": "http://casamentokarinaeguilherme-com.umbler.net/finalizar?valor=" + Number(req.params.valor),
                 "failure": "http://www.seu-site/failure",
                 "pending": "http://www.seu-site/pending"
             },
