@@ -31,14 +31,16 @@ app.use(function(req, res, next) {
 
 
 app.post('/api/add', async(req, res, next) => {
-    let valor = req.body.valor
-    valor = valor.replace('.', '')
+    let valor = req.query.valor
+    if (valor.includes('.') != false) {
+        valor = valor.replace('.', '')
+    }
     let result = await pagamento.cadPag(valor);
     let dados = await pagamento.getTotal();
     let subTotal = Number(dados[0].valor) - Number(valor)
     console.log(subTotal)
     let total = pagamento.total(subTotal)
-        // res.json(result)
+    res.json(result)
 })
 
 app.get('/api/getTotal', async(req, res, next) => {
