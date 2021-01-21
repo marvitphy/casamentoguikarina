@@ -171,7 +171,7 @@
         
         .bussola {
             width: 180px;
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         
         #ancora {
@@ -183,16 +183,22 @@
         }
         
         @media only screen and (max-width: 600px) {
+            .gui {
+                transform: translateY(-50px);
+            }
+            #teste {
+                display: none;
+            }
             .onda {
                 width: 20px;
             }
             .sos {
                 width: 150px;
-                margin-top: 30px;
+                transform: translateY(-75px)
             }
             .bussola {
                 width: 100px;
-                transform: translateY(-25px);
+                transform: translateY(25px);
             }
             #myVideo {
                 position: fixed;
@@ -251,14 +257,11 @@
                     <div class="col-md-8 col-md-offset-2 text-center">
                         <div class="display-t">
 
-                            <div class="display-tc animate-box" data-animate-effect="fadeIn">
+                            <div class="display-tc animate-box" data-animate-effect="fadeIn" id="teste">
                                 <br><br>
-                                <h1>Guilherme <i id="ancora" class="fas fa-anchor"></i> Karina</h1>
+                                <h1 class="gui">Guilherme <i id="ancora" class="fas fa-anchor"></i> Karina</h1>
 
-                                <div style="transform: translateY(-40px); color: white; text-align: left; margin ">
-
-
-                                </div>
+                                <div style="transform: translateY(-40px); color: white; text-align: left; margin "> </div>
 
 
                                 <div class="simply-countdown simply-countdown-one"></div>
