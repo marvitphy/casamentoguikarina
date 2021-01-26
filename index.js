@@ -55,14 +55,14 @@ app.get('/api/getTotal', async(req, res, next) => {
 var port = Number(process.env.PORT || 3000);
 
 app.get('/', function(req, res) {
-    res.render('Dashboard')
+    res.render('PagaNois')
 })
 app.get('/finalizar', function(req, res) {
     res.render('Finalizar')
 })
 
 app.get('/sos', function(req, res) {
-    res.render('Sos')
+    res.render('PagaNois')
 })
 
 
