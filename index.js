@@ -62,13 +62,13 @@ app.get('/finalizar', function(req, res) {
 })
 
 app.get('/sos', function(req, res) {
-    res.render('Dashboard')
+    res.render('Sos')
 })
 
 
 mercadopago.configure({
 
-    access_token: 'TEST-2403643030781235-011820-a0f533b2bc57528a1363a9a9790797a1-412855985'
+    access_token: 'APP_USR-6305950079974131-013012-f9cd603181545867079d8d7bda1bbb01-81455634'
 
 });
 
